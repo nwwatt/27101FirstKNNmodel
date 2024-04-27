@@ -14,7 +14,7 @@ with open('niwan-knn_penguin.pkl', 'rb') as file:
     model, species_encoder, island_encoder, sex_encoder = pickle.load(file)
 
 # Streamlit app
-st.title("Penguin Species Prediction")
+st.title("Penguin Species Prediction :) by nw")
 
 # Get user input for each variable
 island_input = st.selectbox('Select island:', ['Torgersen', 'Biscoe', 'Dream'])
