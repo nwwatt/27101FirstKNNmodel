@@ -11,7 +11,9 @@ import pickle
 
 # Load model
 with open('niwan-knn_penguin.pkl', 'rb') as file:
-    model, species_encoder, island_encoder, sex_encoder = pickle.load(file)
+    # model, species_encoder, island_encoder, sex_encoder = pickle.load(file)
+    obj_load = pickle.load(file)
+    model, species_encoder, island_encoder ,sex_encode = obj_load
 
 # Streamlit app
 st.title("Penguin Species Prediction :) by nw")
